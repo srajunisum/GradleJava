@@ -1,0 +1,92 @@
+<component name="libraryTable">
+  <library name="backport-util-concurrent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/backport-util-concurrent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/cmgt-ariesPorting.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/cmgt-base64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/cmgt-configurator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/cmgt-configuredItem.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/cmgt-rulesEngine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/comm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-betwixt-0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-digester-1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-fileupload-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-io-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-lang-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-logging-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-net-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/commons-pool-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/concurrent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/dom4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ehcache-core-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/entities.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ezmorph-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/GetOrderUserExits.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/icu4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/install_foundation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/jakarta-oro-2.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/jboss-aop-jdk50-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/jboss-aop-jdk50.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/jboss-messaging-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/jbossall-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/JSON4J_Apache.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-analyzers-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-core-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-demos-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-queries-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-snowball-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/lucene-spellchecker-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/owasp-esapi-full-java-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/platform_activity.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/platform_afc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/platform_afc_ui_impl_be.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/platform_baseutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/platform_dv.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/saauishared.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/sbc_be.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/scecoreshared.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/serializer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/slf4j-api-1.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/smcfsshared.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/soap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/trove.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/uishared.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/vasbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/wmsbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/xalan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/xapi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdbridge.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdclientbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdfop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdjasper.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycdshared.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycmbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ycsbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ydmbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/yicbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/yimbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/yompbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/ypmbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/yscpbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/yscwbe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/sbc.war!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/sbc.war!/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../smcfs.ear/tools.jar!/" />
+    </SOURCES>
+  </library>
+</component>
