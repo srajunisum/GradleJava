@@ -19,9 +19,9 @@ pipeline {
         stage('Copy Jar') {
            steps {
                    script {
-                                   step ([
+                                   step ([$class: 'CopyArtifact',
                                        projectName: 'test',
-                                       filter: "build/libs*.jar",
+                                       filter: "build/libs/*.jar",
                                        target: 'C:\\Users\nisum']);
                                }
 
