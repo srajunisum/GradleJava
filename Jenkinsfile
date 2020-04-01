@@ -10,13 +10,12 @@ pipeline {
         }
 
 
-    stage('Gradle Build') {
-        steps{
-                script {
+        stage('Gradle Build') {
+                steps {
                     bat 'gradlew.bat clean build'
                  }
-         }
-     }
+
+        }
 
    }
 
