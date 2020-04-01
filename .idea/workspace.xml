@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f62b45-d451-4ace-b544-7bacc5eef956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +130,7 @@
       <workItem from="1585640855590" duration="3040000" />
       <workItem from="1585646646676" duration="16840000" />
       <workItem from="1585731191823" duration="2238000" />
-      <workItem from="1585739124544" duration="9468000" />
+      <workItem from="1585739124544" duration="9551000" />
     </task>
     <servers />
   </component>

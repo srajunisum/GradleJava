@@ -22,7 +22,7 @@ pipeline {
                                    step ([$class: 'CopyArtifact',
                                        projectName: 'test',
                                        filter: "build/libs*.jar",
-                                       target: 'C:\\Users\nisum\Documents']);
+                                       target: 'C:\\Users\nisum']);
                                }
 
               }
