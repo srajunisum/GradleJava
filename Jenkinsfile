@@ -18,7 +18,7 @@ pipeline {
 
         stage('Copy Jar') {
            steps {
-            fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '\test\build', targetLocation: "C:\\Users\nisum")])
+            fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "\test\build", targetLocation: "C:\\Users\nisum")])
             }
          }
 
