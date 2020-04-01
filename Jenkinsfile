@@ -1,8 +1,8 @@
 pipeline {
 
-  agent any
+   agent any
 
-   stages {
+    stages {
         stage('Cloning Git') {
             steps {
                  git credentialsId: '6a3bf6ef-5144-4e85-9ce9-c05020be6a4a', url: 'https://github.com/srajunisum/GradleJava.git'
@@ -12,11 +12,11 @@ pipeline {
 
         stage('Gradle Build') {
                 steps {
-                    bat 'gradlew.bat clean build'
+                    bat 'gradle clean build'
                  }
 
         }
 
-   }
+    }
 
   }
