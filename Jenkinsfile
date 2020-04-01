@@ -18,7 +18,7 @@ pipeline {
 
         stage('Copy Jar') {
 
-        dir("test\build\libs") {
+        dir("\test\build\libs") {
             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.MTS', targetLocation: "C:\\Users\nisum\Documents\Docs")])
         }
          }
