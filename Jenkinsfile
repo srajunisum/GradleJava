@@ -18,7 +18,7 @@ pipeline {
 
         stage('Copy Jar') {
 
-            bat 'xcopy C:\\Program Files (x86)\Jenkins\workspace\test\build\libs C:\\Users\nisum\Documents\Docs /O /X /E /H /K'
+            fileOperations([fileCopyOperation(excludes: '', flattenFiles: false, includes: "C:\\Program Files (x86)\Jenkins\workspace\test\build\libs", targetLocation: "C:\\Users\nisum\Documents\Docs")])
         }
 
 
