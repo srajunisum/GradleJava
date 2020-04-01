@@ -18,8 +18,14 @@ pipeline {
 
         stage('Copy Jar') {
            steps {
-            fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "\test\tmp", targetLocation: "C:\\Users\nisum")])
-            }
+                   script {
+                                   step ([$class: 'CopyArtifact',
+                                       projectName: 'test',
+                                       filter: "build/libs*.jar",
+                                       target: 'C:\\Users\nisum\Documents']);
+                               }
+
+              }
          }
 
 
