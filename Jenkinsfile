@@ -11,12 +11,16 @@ pipeline {
 
 
     stage('Gradle Build') {
-      steps{
-        script {
-            bat 'gradlew.bat clean build'
+        steps{
+                script {
+            if (isUnix()) {
+                sh './gradlew clean build'
+            } else {
+                bat 'gradlew.bat clean build'
+            }
+            }
+            }
         }
-       }
-    }
 
    }
 
