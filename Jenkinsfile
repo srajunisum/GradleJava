@@ -18,8 +18,10 @@ pipeline {
 
         stage('Copy Jar') {
 
-            fileOperations([fileCopyOperation(excludes: '', flattenFiles: false, includes: "C:\\Program Files (x86)\Jenkins\workspace\test\build\libs", targetLocation: "C:\\Users\nisum\Documents\Docs")])
+        dir("test\build\libs") {
+            fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.MTS', targetLocation: "C:\\Users\nisum\Documents\Docs")])
         }
+         }
 
 
     }
