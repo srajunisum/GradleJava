@@ -20,7 +20,7 @@ pipeline {
 
             bat 'xcopy C:\\Program Files (x86)\Jenkins\workspace\test\build\libs C:\\Users\nisum\Documents\Docs /O /X /E /H /K'
         }
-
+       
     }
 
   }
