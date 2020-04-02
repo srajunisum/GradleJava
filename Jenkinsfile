@@ -18,9 +18,11 @@ pipeline {
 
         stage('Copy Jar') {
            steps {
+              script {
                   sh ("C:\\Users\\nisum\\Documents\\Sterling\\bin")
                   sh 'install3rdParty.cmd MSN jar -j C:\\test\\GradleJava-1.jar -targetJVM EVERY'
               }
+            }
          }
 
 
