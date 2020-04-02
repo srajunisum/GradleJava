@@ -20,7 +20,7 @@ pipeline {
            steps {
               script {
                   dir ("C:\\Users\\nisum\\Documents\\Sterling\\bin")
-                  bat 'install3rdParty.cmd MSN jar -j C:\GradleJava-1.jar -targetJVM EVERY'
+                  bat 'install3rdParty.cmd MSN jar -j C:\\GradleJava-1.jar -targetJVM EVERY'
               }
             }
          }
