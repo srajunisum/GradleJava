@@ -19,11 +19,9 @@ pipeline {
         stage('Copy Jar') {
            steps {
                    script {
-                                   step ([$class: 'CopyArtifact',
-                                       projectName: 'test',
-                                       filter: "build/libs/*.jar",
-                                       target: 'C:\\Users\nisum']);
-                               }
+                            sh 'cd C:\Users\nisum\Documents\Sterling\bin'
+                            bat 'install3rdParty.cmd MSN jar -j  C:\Program Files (x86)\Jenkins\workspace\test\build\libs\GradleJava-1.jar -targetJVM EVERY'
+                         }
 
               }
          }
