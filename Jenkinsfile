@@ -1,9 +1,5 @@
 pipeline {
 
-environment {
-       JAR_DIR = "${env.WORKSPACE}/build/libs/GradleJava-1.jar"
-       TARGET_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
-  }
    agent any
 
     stages {
@@ -17,8 +13,6 @@ environment {
         stage('Gradle Build') {
                 steps {
                     bat 'gradlew.bat clean build'
-                    echo "${JAR_DIR} "
-                    echo "${TARGET_DIR}"
                  }
         }
 
@@ -26,9 +20,17 @@ environment {
              steps {
               dir("C:\\Program Files (x86)\\Jenkins\\workspace\\test\\build\\libs") {
                 fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
-            }
-
+                }
              }
+           }
+
+          stage('Install3rdParty') {
+                    steps {
+                       script {
+                           dir ("C:\\Users\\nisum\\Documents\\Sterling\\bin")
+                           bat 'install3rdParty.cmd MSN jar -j GradleJava-1.jar -targetJVM EVERY'
+                       }
+                     }
            }
 
 
