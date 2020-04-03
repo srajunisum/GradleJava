@@ -1,6 +1,6 @@
 pipeline {
   environment {
-         WORK_DIR = "${env.WORKSPACE}/build/libs”
+         WORK_DIR = "${env.WORKSPACE}/build/libs"
     }
   agent any
 
