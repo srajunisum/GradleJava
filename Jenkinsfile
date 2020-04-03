@@ -24,7 +24,15 @@ pipeline {
              }
           }
        }
-
+      stage('Install3rdParty') {
+               steps {
+                  script {
+                     dir("C:\\Users\\nisum\\Documents\\Sterling\\bin"){
+                      bat 'install3rdParty.cmd MSN jar -j ${WORK_DIR}/*.jar -targetJVM EVERY'
+                      }
+                  }
+                }
+             }
 
 
     }
