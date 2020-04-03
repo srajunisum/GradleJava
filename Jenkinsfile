@@ -16,14 +16,14 @@ pipeline {
                  }
         }
 
-        stage('Install3rdParty') {
-           steps {
-              script {
-                  dir ("C:\\Users\\nisum\\Documents\\Sterling\\bin")
-                  bat 'start cmd.exe /c install3rdParty.cmd MSN jar -j C:\\Program Files (x86)\\Jenkins\\workspace\\test\\build\\libs\\GradleJava-1.jar -targetJVM EVERY'
-              }
-            }
-         }
+        stage('Copy Jar') {
+                    steps {
+
+                        fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "${WORKSPACE}\\build\\libs\\*.jar", targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
+                      }
+                }
+
+
 
 
     }

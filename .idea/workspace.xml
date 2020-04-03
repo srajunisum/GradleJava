@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37f62b45-d451-4ace-b544-7bacc5eef956" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +132,7 @@
       <workItem from="1585646646676" duration="16840000" />
       <workItem from="1585731191823" duration="2238000" />
       <workItem from="1585739124544" duration="23295000" />
+      <workItem from="1585890570373" duration="2833000" />
     </task>
     <servers />
   </component>
@@ -178,6 +180,10 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1585660347873" />
+    <state x="220" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585890622511">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="220" y="191" key="com.intellij.ide.util.TipDialog/0.0.1024.728@0.0.1024.728" timestamp="1585890622511" />
     <state x="181" y="0" width="662" height="728" key="find.popup" timestamp="1585641799088">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
