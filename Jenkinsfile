@@ -24,7 +24,10 @@ environment {
 
         stage('Copy Jar') {
              steps {
-               fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes:"${JAR_DIR}" , targetLocation:"${TARGET_DIR}")])
+              dir("C:\\Program Files (x86)\\Jenkins\\workspace\\test\\build\\libs") {
+                fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
+            }
+
              }
            }
 
