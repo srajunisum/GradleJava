@@ -19,7 +19,7 @@ pipeline {
 
       stage('Copy Jar') {
           steps {
-            dir("WORK_DIR") {
+            dir("${WORK_DIR}") {
              fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
              }
           }
