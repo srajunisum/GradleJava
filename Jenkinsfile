@@ -1,7 +1,5 @@
 pipeline {
-  environment {
-         WORK_DIR = "${env.WORKSPACE}/build/libs"
-    }
+
   agent any
 
    stages {
@@ -19,21 +17,31 @@ pipeline {
 
       stage('Copy Jar') {
           steps {
-            dir("${WORK_DIR}") {
+            dir("C:\\Program Files (x86)\\Jenkins\\workspace\\test\\build\\libs") {
              fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
              }
           }
        }
-      stage('Install3rdParty') {
-               steps {
-                  script {
-                     dir("C:\\Users\\nisum\\Documents\\Sterling\\bin"){
-                      bat 'install3rdParty.cmd MSN jar -j ${WORK_DIR}/*.jar -targetJVM EVERY'
-                      }
-                  }
-                }
-             }
 
+      stage('Install3rdParty') {
+         steps {
+            script {
+               dir("C:\\Users\\nisum\\Documents\\Sterling\\bin"){
+                bat 'install3rdParty.cmd MSN jar -j GradleJava-1.jar -targetJVM EVERY'
+                }
+            }
+          }
+       }
+
+      stage('Buildear') {
+         steps {
+           script {
+              dir("C:\\Users\\nisum\\Documents\\Sterling\\bin"){
+              bat 'buildear.cmd -Dappserver=jboss -Dwarfiles=smcfs,sbc -Dearfile=smcfs.ear -Dnowebservice=true -Dnoejb=true -Ddevmode=true create-ear'
+              }
+            }
+          }
+       }
 
     }
 
