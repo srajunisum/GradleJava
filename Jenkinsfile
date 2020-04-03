@@ -24,7 +24,7 @@ environment {
 
         stage('Copy Jar') {
              steps {
-               fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes:${JAR_DIR} , targetLocation:${TARGET_DIR})])
+               fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes:"${JAR_DIR}" , targetLocation:"${TARGET_DIR}")])
              }
            }
 
