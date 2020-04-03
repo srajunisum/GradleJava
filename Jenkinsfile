@@ -1,7 +1,7 @@
 pipeline {
 
 environment {
-       JAR_DIR = "${env.WORKSPACE}\\build\\libs\\GradleJava-1.jar"
+       JAR_DIR = "${env.WORKSPACE}/build/libs/GradleJava-1.jar"
        TARGET_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
   }
    agent any
