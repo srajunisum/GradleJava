@@ -1,7 +1,7 @@
 pipeline {
 
 environment {
-       JAR_DIR = "${env.WORKSPACE}\\build\\libs"
+       JAR_DIR = "${env.WORKSPACE}\\build\\libs\\*.jar"
        TARGET_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
   }
    agent any
