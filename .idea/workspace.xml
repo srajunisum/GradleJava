@@ -4,8 +4,6 @@
     <list default="true" id="37f62b45-d451-4ace-b544-7bacc5eef956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/ApplyOrderHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/ApplyOrderHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/NSMXMLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/NSMXMLUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +133,7 @@
       <workItem from="1585731191823" duration="2238000" />
       <workItem from="1585739124544" duration="23295000" />
       <workItem from="1585890570373" duration="6703000" />
-      <workItem from="1585913279231" duration="4142000" />
+      <workItem from="1585913279231" duration="4899000" />
     </task>
     <servers />
   </component>
