@@ -19,7 +19,7 @@ pipeline {
         stage('Copy Jar') {
                     steps {
 
-                        fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "${WORKSPACE}\build\libs\*.jar", targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
+                        fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "${WORKSPACE}\build\libs\GradleJava-1.jar", targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
                       }
                 }
 
