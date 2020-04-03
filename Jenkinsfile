@@ -27,7 +27,7 @@ pipeline {
           stage('Install3rdParty') {
                     steps {
                        script {
-                           dir ("C:\\Users\\nisum\\Documents\\Sterling\\bin")
+                           dir("C:\\Users\\nisum\\Documents\\Sterling\\bin")
                            bat 'install3rdParty.cmd MSN jar -j GradleJava-1.jar -targetJVM EVERY'
                        }
                      }
