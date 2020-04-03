@@ -1,5 +1,9 @@
 pipeline {
 
+environment {
+       JAR_DIR = "${env.WORKSPACE}\\build\\libs"
+       TARGET_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
+  }
    agent any
 
     stages {
@@ -13,15 +17,16 @@ pipeline {
         stage('Gradle Build') {
                 steps {
                     bat 'gradlew.bat clean build'
+                    echo "${JAR_DIR} "
+                    echo "${TARGET_DIR}"
                  }
         }
 
         stage('Copy Jar') {
-                    steps {
-
-                        fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: "${WORKSPACE}\build\libs\GradleJava-1.jar", targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
-                      }
-                }
+             steps {
+               fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes:${JAR_DIR} , targetLocation:${TARGET_DIR})])
+             }
+           }
 
 
 
