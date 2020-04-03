@@ -34,6 +34,16 @@ pipeline {
                      }
            }
 
+           stage('Buildear') {
+                               steps {
+                                  script {
+                                      dir("C:\\Users\\nisum\\Documents\\Sterling\\bin"){
+                                      bat 'buildear.cmd -Dappserver=jboss -Dwarfiles=smcfs,sbc -Dearfile=smcfs.ear -Dnowebservice=true -Dnoejb=true -Ddevmode=true create-ear'
+                                      }
+                                  }
+                                }
+                      }
+
 
 
 
