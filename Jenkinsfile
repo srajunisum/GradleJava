@@ -1,7 +1,7 @@
 pipeline {
   environment {
          WORK_DIR      = "${env.WORKSPACE}/build/libs"
-         STEERLING_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
+         STERLING_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
     }
   agent any
 
@@ -21,7 +21,7 @@ pipeline {
       stage('Copy Jar') {
           steps {
             dir("${WORK_DIR}") {
-             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "${STEERLING_DIR}")])
+             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "${STERLING_DIR}")])
              }
           }
        }
@@ -29,7 +29,7 @@ pipeline {
       stage('Install3rdParty') {
          steps {
             script {
-               dir("${STEERLING_DIR}"){
+               dir("${STERLING_DIR}"){
                 bat 'install3rdParty.cmd MSN jar -j *.jar -targetJVM EVERY'
                 }
             }
@@ -39,7 +39,7 @@ pipeline {
       stage('Buildear') {
          steps {
             script {
-              dir("${STEERLING_DIR}"){
+              dir("${STERLING_DIR}"){
               bat 'buildear.cmd -Dappserver=jboss -Dwarfiles=smcfs,sbc -Dearfile=smcfs.ear -Dnowebservice=true -Dnoejb=true -Ddevmode=true create-ear'
               }
             }
