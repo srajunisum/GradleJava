@@ -26,7 +26,25 @@ pipeline {
           }
        }
 
+      stage('Install3rdParty') {
+         steps {
+            script {
+               dir("${STEERLING_DIR}"){
+                bat 'install3rdParty.cmd MSN jar -j *.jar -targetJVM EVERY'
+                }
+            }
+          }
+       }
 
+      stage('Buildear') {
+                 steps {
+                   script {
+                      dir("${STEERLING_DIR}"){
+                      bat 'buildear.cmd -Dappserver=jboss -Dwarfiles=smcfs,sbc -Dearfile=smcfs.ear -Dnowebservice=true -Dnoejb=true -Ddevmode=true create-ear'
+                      }
+                    }
+                  }
+               }
 
     }
 
