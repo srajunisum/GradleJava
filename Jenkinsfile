@@ -1,6 +1,7 @@
 pipeline {
   environment {
          WORK_DIR      = "${env.WORKSPACE}/build/libs"
+         STEERLING_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
     }
   agent any
 
@@ -20,7 +21,7 @@ pipeline {
       stage('Copy Jar') {
           steps {
             dir("${WORK_DIR}") {
-             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "C:\\Users\\nisum\\Documents\\Sterling\\bin")])
+             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "${STEERLING_DIR}")])
              }
           }
        }
