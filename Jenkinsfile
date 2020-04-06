@@ -29,7 +29,7 @@ pipeline {
       stage('Install3rdParty') {
          steps {
             script {
-               dir("${WORK_DIR}"){
+               dir("${STEERLING_DIR}"){
                 bat 'install3rdParty.cmd MSN jar -j *.jar -targetJVM EVERY'
                 }
             }
