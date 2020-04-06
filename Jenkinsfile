@@ -36,6 +36,16 @@ pipeline {
           }
        }
 
+       stage('Resource deployer') {
+         steps {
+           script {
+             dir("${STERLING_DIR}"){
+              bat 'deployer.cmd -t resourcejar'
+              }
+            }
+          }
+       }
+
       stage('Entity deployer') {
         steps {
           script {
@@ -46,15 +56,6 @@ pipeline {
         }
        }
 
-      stage('Resource deployer') {
-          steps {
-            script {
-               dir("${STERLING_DIR}"){
-               bat 'deployer.cmd -t resourcejar'
-               }
-             }
-           }
-      }
 
     }
 
