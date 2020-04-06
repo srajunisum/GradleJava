@@ -36,24 +36,24 @@ pipeline {
           }
        }
 
-       stage('Entitydeployer') {
-               steps {
-                  script {
-                    dir("${STERLING_DIR}"){
-                    bat 'deployer.cmd -t entitydeployer'
-                    }
-                  }
-                }
-            }
-
-      stage('Buildear') {
-         steps {
-            script {
-              dir("${STERLING_DIR}"){
-              bat 'buildear.cmd -Dappserver=jboss -Dwarfiles=smcfs,sbc -Dearfile=smcfs.ear -Dnowebservice=true -Dnoejb=true -Ddevmode=true create-ear'
+      stage('Entity deployer') {
+        steps {
+          script {
+             dir("${STERLING_DIR}"){
+              bat 'deployer.cmd -t entitydeployer'
               }
-            }
-          }
+           }
+        }
+       }
+
+      stage('Resource deployer') {
+          steps {
+            script {
+               dir("${STERLING_DIR}"){
+               bat 'deployer.cmd -t resourcejar'
+               }
+             }
+           }
       }
 
     }
