@@ -36,6 +36,16 @@ pipeline {
           }
        }
 
+       stage('Entitydeployer') {
+               steps {
+                  script {
+                    dir("${STERLING_DIR}"){
+                    bat 'deployer.cmd -t entitydeployer'
+                    }
+                  }
+                }
+            }
+
       stage('Buildear') {
          steps {
             script {
