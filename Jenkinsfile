@@ -18,43 +18,7 @@ pipeline {
             }
         }
 
-      stage('Copy Jar') {
-          steps {
-            dir("${WORK_DIR}") {
-             fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: '*.jar', targetLocation: "${STERLING_DIR}")])
-             }
-          }
-       }
 
-      stage('Install3rdParty') {
-         steps {
-            script {
-               dir("${STERLING_DIR}"){
-                bat 'install3rdParty.cmd MSN jar -j *.jar -targetJVM EVERY'
-                }
-            }
-          }
-       }
-
-       stage('Resource deployer') {
-         steps {
-           script {
-             dir("${STERLING_DIR}"){
-              bat 'deployer.cmd -t resourcejar'
-              }
-            }
-          }
-       }
-
-      stage('Entity deployer') {
-        steps {
-          script {
-             dir("${STERLING_DIR}"){
-              bat 'deployer.cmd -t entitydeployer'
-              }
-           }
-        }
-       }
 
     stage('Create folder') {
             steps {
