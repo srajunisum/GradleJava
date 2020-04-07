@@ -2,6 +2,7 @@ pipeline {
   environment {
          WORK_DIR      = "${env.WORKSPACE}/build/libs"
          STERLING_DIR = "C:\\Users\\nisum\\Documents\\Sterling\\bin"
+         FOLDER_DIR = "C:\\Users\\nisum\\Documents"
     }
   agent any
 
@@ -23,8 +24,10 @@ pipeline {
     stage('Create folder') {
             steps {
               script {
-                 dir("${STERLING_DIR}"){
+                 dir("${FOLDER_DIR}"){
                   bat 'mkdir testsmcfs.ear'
+                   fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: 'C:\\Users\\nisum\\Documents\\Sterling\\external_deployments\\smcfs.ear', targetLocation: "${STERLING_DIR}//testsmcfs.ear")])
+
                   }
                }
             }
