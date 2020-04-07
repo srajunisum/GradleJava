@@ -56,6 +56,16 @@ pipeline {
         }
        }
 
+    stage('Create folder') {
+            steps {
+              script {
+                 dir("${STERLING_DIR}"){
+                  bat 'mkdir testsmcfs.ear'
+                  }
+               }
+            }
+           }
+
 
     }
 
