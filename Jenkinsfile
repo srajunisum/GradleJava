@@ -26,7 +26,7 @@ pipeline {
               script {
                  dir("${FOLDER_DIR}"){
                   bat 'mkdir testsmcfs.ear'
-                   fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: 'C:\\Users\\nisum\\Documents\\Sterling\\external_deployments\\smcfs.ear', targetLocation: "${STERLING_DIR}\\testsmcfs.ear")])
+                   fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: 'C:\\Users\\nisum\\Documents\\Sterling\\external_deployments\\smcfs.ear', targetLocation: "${FOLDER_DIR}\\testsmcfs.ear")])
 
                   }
                }
